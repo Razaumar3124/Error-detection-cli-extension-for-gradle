@@ -1,0 +1,41 @@
+To honour the JVM settings for this build a single-use Daemon process will be forked. For more on this, please refer to https://docs.gradle.org/9.2.1/userguide/gradle_daemon.html#sec:disabling_the_daemon in the Gradle documentation.
+Daemon will be stopped at the end of the build 
+
+> Task :app:compileJava UP-TO-DATE
+
+> Task :app:processResources NO-SOURCE
+> Task :app:classes UP-TO-DATE
+> Task :app:jar UP-TO-DATE
+> Task :app:startScripts UP-TO-DATE
+> Task :app:distTar UP-TO-DATE
+> Task :app:distZip UP-TO-DATE
+> Task :app:assemble UP-TO-DATE
+
+> Task :app:compileTestJava UP-TO-DATE
+
+> Task :app:processTestResources NO-SOURCE
+> Task :app:testClasses UP-TO-DATE
+> Task :app:test NO-SOURCE
+> Task :app:check UP-TO-DATE
+> Task :app:build UP-TO-DATE
+
+[Incubating] Problems report is available at: file:///D:/Rnt_Tasks/Mini-Projects/test-gradle-kts/build/reports/problems/problems-report.html
+
+BUILD SUCCESSFUL in 9s
+6 actionable tasks: 6 up-to-date
+
+D:\Rnt_Tasks\Mini-Projects\test-gradle-kts\app\src\main\java\org\example\App.java:11: error: unclosed string literal
+        System.out.println("broken line);
+                           ^
+1 error
+D:\Rnt_Tasks\Mini-Projects\test-gradle-kts\app\src\test\java\org\example\AppTest.java:11: error: cannot find symbol
+        App classUnderTest = new App();
+        ^
+  symbol:   class App
+  location: class AppTest
+D:\Rnt_Tasks\Mini-Projects\test-gradle-kts\app\src\test\java\org\example\AppTest.java:11: error: cannot find symbol
+        App classUnderTest = new App();
+                                 ^
+  symbol:   class App
+  location: class AppTest
+2 errors
