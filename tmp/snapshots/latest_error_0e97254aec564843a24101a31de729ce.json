@@ -1,0 +1,102 @@
+{
+  "project": "D:\\Rnt_Tasks\\Mini-Projects\\test-gradle-kts",
+  "task": ":app:build",
+  "errors": [
+    {
+      "location": {
+        "path": "D:\\Rnt_Tasks\\Mini-Projects\\test-gradle-kts\\app\\src\\main\\java\\org\\example\\App.java",
+        "line": 8
+      },
+      "details": {
+        "type": "symbol_not_found",
+        "message": "D:\\Rnt_Tasks\\Mini-Projects\\test-gradle-kts\\app\\src\\main\\java\\org\\example\\App.java:8: error: unclosed string literal\n        System.out.println(\"Hello  + name);\n                           ^\nD:\\Rnt_Tasks\\Mini-Projects\\test-gradle-kts\\app\\src\\main\\java\\org\\example\\App.java:11: error: unclosed string literal\n        System.out.println(\"broken line);\n                           ^\n2 errors\nD:\\Rnt_Tasks\\Mini-Projects\\test-gradle-kts\\app\\src\\test\\java\\org\\example\\AppTest.java:11: error: cannot find symbol\n        App classUnderTest = new App();\n        ^\n  symbol:   class App\n  location: class AppTest\nD:\\Rnt_Tasks\\Mini-Projects\\test-gradle-kts\\app\\src\\test\\java\\org\\example\\AppTest.java:11: error: cannot find symbol\n        App classUnderTest = new App();\n                                 ^\n  symbol:   class App\n  location: class AppTest\n2 errors",
+        "error_code": "System.out.println(\"Hello  + name);"
+      },
+      "before": {
+        "path": "D:\\Rnt_Tasks\\Mini-Projects\\test-gradle-kts\\app\\src\\main\\java\\org\\example\\App.java",
+        "sha256_clean": "daee70c2828ad0881f614e6d9c6d5234a2884207950e261473db84a47745b881",
+        "git_hash": "b897e1562e875e18f350cb09c868e56af5253fa1ca32757e68b7eace2d4919e5",
+        "error_line": 8,
+        "error_code": "        System.out.println(\"Hello  + name);",
+        "fixed_code": null,
+        "content": "package org.example;\n\npublic class App {\n    public static void main(String[] args) {\n        String name = \"Raza\";\n\n        \n        System.out.println(\"Hello  + name);\n\n        \n        System.out.println(\"broken line);\n    }\n}\n"
+      },
+      "after": {
+        "path": "D:\\Rnt_Tasks\\Mini-Projects\\test-gradle-kts\\app\\src\\main\\java\\org\\example\\App.java",
+        "sha256_clean": "06e97b8233f95458657d2ae120c098a81d3b1bd816fc532a7b33cf953565f491",
+        "git_hash": "ddd549efe817eb70fc899866c912bef1ee018e4f21350f3d36d87ea9b284cdeb",
+        "error_line": null,
+        "error_code": null,
+        "fixed_code": "        System.out.println(\"Hello \" + name);",
+        "content": "package org.example;\n\npublic class App {\n    public static void main(String[] args) {\n        String name = \"Raza\";\n\n        \n        System.out.println(\"Hello \" + name);\n\n        \n        System.out.println(\"broken line);\n    }\n}\n"
+      },
+      "diff": {
+        "unified": "--- D:\\Rnt_Tasks\\Mini-Projects\\test-gradle-kts\\app\\src\\main\\java\\org\\example\\App.java (before)\n+++ D:\\Rnt_Tasks\\Mini-Projects\\test-gradle-kts\\app\\src\\main\\java\\org\\example\\App.java (after)\n@@ -5,7 +5,7 @@\n         String name = \"Raza\";\n \n         \n-        System.out.println(\"Hello  + name);\n+        System.out.println(\"Hello \" + name);\n \n         \n         System.out.println(\"broken line);\n"
+      }
+    },
+    {
+      "location": {
+        "path": "D:\\Rnt_Tasks\\Mini-Projects\\test-gradle-kts\\app\\src\\main\\java\\org\\example\\App.java",
+        "line": 11
+      },
+      "details": {
+        "type": "symbol_not_found",
+        "message": "D:\\Rnt_Tasks\\Mini-Projects\\test-gradle-kts\\app\\src\\main\\java\\org\\example\\App.java:11: error: unclosed string literal\n        System.out.println(\"broken line);\n                           ^\n2 errors\nD:\\Rnt_Tasks\\Mini-Projects\\test-gradle-kts\\app\\src\\test\\java\\org\\example\\AppTest.java:11: error: cannot find symbol\n        App classUnderTest = new App();\n        ^\n  symbol:   class App\n  location: class AppTest\nD:\\Rnt_Tasks\\Mini-Projects\\test-gradle-kts\\app\\src\\test\\java\\org\\example\\AppTest.java:11: error: cannot find symbol\n        App classUnderTest = new App();\n                                 ^\n  symbol:   class App\n  location: class AppTest\n2 errors",
+        "error_code": "System.out.println(\"broken line);"
+      },
+      "before": {
+        "path": "D:\\Rnt_Tasks\\Mini-Projects\\test-gradle-kts\\app\\src\\main\\java\\org\\example\\App.java",
+        "sha256_clean": "daee70c2828ad0881f614e6d9c6d5234a2884207950e261473db84a47745b881",
+        "git_hash": "b897e1562e875e18f350cb09c868e56af5253fa1ca32757e68b7eace2d4919e5",
+        "error_line": 11,
+        "error_code": "        System.out.println(\"broken line);",
+        "fixed_code": null,
+        "content": "package org.example;\n\npublic class App {\n    public static void main(String[] args) {\n        String name = \"Raza\";\n\n        \n        System.out.println(\"Hello  + name);\n\n        \n        System.out.println(\"broken line);\n    }\n}\n"
+      },
+      "after": {
+        "path": "D:\\Rnt_Tasks\\Mini-Projects\\test-gradle-kts\\app\\src\\main\\java\\org\\example\\App.java",
+        "sha256_clean": "06e97b8233f95458657d2ae120c098a81d3b1bd816fc532a7b33cf953565f491",
+        "git_hash": "ddd549efe817eb70fc899866c912bef1ee018e4f21350f3d36d87ea9b284cdeb",
+        "error_line": null,
+        "error_code": null,
+        "fixed_code": "        System.out.println(\"broken line);",
+        "content": "package org.example;\n\npublic class App {\n    public static void main(String[] args) {\n        String name = \"Raza\";\n\n        \n        System.out.println(\"Hello \" + name);\n\n        \n        System.out.println(\"broken line);\n    }\n}\n"
+      },
+      "diff": {
+        "unified": "--- D:\\Rnt_Tasks\\Mini-Projects\\test-gradle-kts\\app\\src\\main\\java\\org\\example\\App.java (before)\n+++ D:\\Rnt_Tasks\\Mini-Projects\\test-gradle-kts\\app\\src\\main\\java\\org\\example\\App.java (after)\n@@ -5,7 +5,7 @@\n         String name = \"Raza\";\n \n         \n-        System.out.println(\"Hello  + name);\n+        System.out.println(\"Hello \" + name);\n \n         \n         System.out.println(\"broken line);\n"
+      }
+    },
+    {
+      "location": {
+        "path": "D:\\Rnt_Tasks\\Mini-Projects\\test-gradle-kts\\app\\src\\test\\java\\org\\example\\AppTest.java",
+        "line": 11
+      },
+      "details": {
+        "type": "symbol_not_found",
+        "message": "D:\\Rnt_Tasks\\Mini-Projects\\test-gradle-kts\\app\\src\\test\\java\\org\\example\\AppTest.java:11: error: cannot find symbol\n        App classUnderTest = new App();\n        ^\n  symbol:   class App\n  location: class AppTest\nD:\\Rnt_Tasks\\Mini-Projects\\test-gradle-kts\\app\\src\\test\\java\\org\\example\\AppTest.java:11: error: cannot find symbol\n        App classUnderTest = new App();\n                                 ^\n  symbol:   class App\n  location: class AppTest\n2 errors",
+        "error_code": "App classUnderTest = new App();"
+      },
+      "before": {
+        "path": "D:\\Rnt_Tasks\\Mini-Projects\\test-gradle-kts\\app\\src\\test\\java\\org\\example\\AppTest.java",
+        "sha256_clean": "2c4f00397b36bb967c8882b96df55a98285518ec657bf7644cf130c2d23c0972",
+        "git_hash": "421f9d81605877d7fcf4766acb5343e1ab4ca485daf56bcafbaffb4643c9fe61",
+        "error_line": 11,
+        "error_code": "        App classUnderTest = new App();",
+        "fixed_code": null,
+        "content": "\npackage org.example;\n\nimport org.junit.Test;\nimport static org.junit.Assert.*;\n\npublic class AppTest {\n    @Test public void appHasAGreeting() {\n        App classUnderTest = new App();\n        assertNotNull(\"app should have a greeting\", classUnderTest.getGreeting());\n    }\n}\n"
+      },
+      "after": {
+        "path": "D:\\Rnt_Tasks\\Mini-Projects\\test-gradle-kts\\app\\src\\test\\java\\org\\example\\AppTest.java",
+        "sha256_clean": "2c4f00397b36bb967c8882b96df55a98285518ec657bf7644cf130c2d23c0972",
+        "git_hash": "421f9d81605877d7fcf4766acb5343e1ab4ca485daf56bcafbaffb4643c9fe61",
+        "error_line": null,
+        "error_code": null,
+        "fixed_code": "        App classUnderTest = new App();",
+        "content": "\npackage org.example;\n\nimport org.junit.Test;\nimport static org.junit.Assert.*;\n\npublic class AppTest {\n    @Test public void appHasAGreeting() {\n        App classUnderTest = new App();\n        assertNotNull(\"app should have a greeting\", classUnderTest.getGreeting());\n    }\n}\n"
+      },
+      "diff": {
+        "unified": ""
+      }
+    }
+  ]
+}
